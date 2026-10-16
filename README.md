@@ -69,15 +69,6 @@ Digite o nome de um país no campo de pesquisa para consultar suas informações
 4. A API retorna os dados do país em formato JSON.
 5. O PHP processa a resposta e apresenta as informações na página.
 
-## 🎯 Objetivo acadêmico
-
-O projeto tem como objetivo praticar o desenvolvimento de aplicações web, a integração com APIs públicas, o envio de requisições HTTP, o processamento de dados JSON e a separação entre a estrutura HTML e a lógica de processamento em PHP.
-
-## 📌 Observações
-
-- É necessário utilizar um servidor com suporte a PHP, como o XAMPP.
-- É necessária uma conexão com a internet para consultar a API.
-- A disponibilidade das informações depende do funcionamento da API pública utilizada.
 
 ---
 
