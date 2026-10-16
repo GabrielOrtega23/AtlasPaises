@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas de Países</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grade" aria-hidden="true"></div>
+  <main class="pagina">
+    <header class="topo">
+      <p class="sobretitulo">Consulta de países</p>
+      <h1>Atlas <em>de Países</em></h1>
+      <p class="lead">Pesquise um país e consulte seus principais dados.</p>
+    </header>
+    <form class="busca" method="post" action="consulta.php" autocomplete="off">
+      <label for="pais" class="sr">Nome do país</label>
+      <div class="campo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        <input type="text" id="pais" name="pais" placeholder="Ex.: Brasil, Japão, Portugal" maxlength="60" required>
+      </div>
+      <button type="submit" class="botao"><span class="texto-botao">Consultar</span></button>
+    </form>
+    <nav class="sugestoes" aria-label="Sugestões de pesquisa">
+      <form method="post" action="consulta.php"><button type="submit" name="pais" value="Brasil">Brasil</button></form>
+      <form method="post" action="consulta.php"><button type="submit" name="pais" value="Japão">Japão</button></form>
+      <form method="post" action="consulta.php"><button type="submit" name="pais" value="Canadá">Canadá</button></form>
+      <form method="post" action="consulta.php"><button type="submit" name="pais" value="Egito">Egito</button></form>
+      <form method="post" action="consulta.php"><button type="submit" name="pais" value="Portugal">Portugal</button></form>
+    </nav>
+    <section class="resultado">
+      <div class="vazio"><h2>Consulte um país</h2><p>Digite o nome de um país acima para ver os dados retornados pela API.</p></div>
+    </section>
+    <footer class="rodape">A consulta aos dados é realizada pelo PHP usando uma API pública.</footer>
+  </main>
+</body>
+</html>
